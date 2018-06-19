@@ -106,7 +106,8 @@ namespace SuaFada.Com
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Dispose();
+            LimparCampos();
+            tabControl1.SelectedIndex = 0;
         }
 
         private void button2_Click(object sender, EventArgs e)
