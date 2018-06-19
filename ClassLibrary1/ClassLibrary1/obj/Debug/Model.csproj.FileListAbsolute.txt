@@ -3,3 +3,8 @@ c:\users\104996\documents\visual studio 2013\Projects\ClassLibrary1\ClassLibrary
 c:\users\104996\documents\visual studio 2013\Projects\ClassLibrary1\ClassLibrary1\obj\Debug\Model.csprojResolveAssemblyReference.cache
 c:\users\104996\documents\visual studio 2013\Projects\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.dll
 c:\users\104996\documents\visual studio 2013\Projects\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
+C:\Users\104996\Documents\GitHub\exercicio-fada\ClassLibrary1\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\Users\104996\Documents\GitHub\exercicio-fada\ClassLibrary1\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\Users\104996\Documents\GitHub\exercicio-fada\ClassLibrary1\ClassLibrary1\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\Users\104996\Documents\GitHub\exercicio-fada\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\Users\104996\Documents\GitHub\exercicio-fada\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
