@@ -15,3 +15,8 @@ C:\Users\104996\Documents\GitHub\exercicio-fada\ClassLibrary1\SuaFada.Com\obj\De
 C:\Users\104996\Documents\GitHub\exercicio-fada\ClassLibrary1\SuaFada.Com\obj\Debug\SuaFada.Com.Form1.resources
 C:\Users\104996\Documents\GitHub\exercicio-fada\ClassLibrary1\SuaFada.Com\obj\Debug\SuaFada.Com.Properties.Resources.resources
 C:\Users\104996\Documents\GitHub\exercicio-fada\ClassLibrary1\SuaFada.Com\obj\Debug\SuaFada.Com.csproj.GenerateResource.Cache
+C:\Users\104996\Documents\GitHub\exercicio-fada\ClassLibrary1\SuaFada.Com\bin\Debug\SuaFada.Com.exe
+C:\Users\104996\Documents\GitHub\exercicio-fada\ClassLibrary1\SuaFada.Com\bin\Debug\SuaFada.Com.pdb
+C:\Users\104996\Documents\GitHub\exercicio-fada\ClassLibrary1\SuaFada.Com\bin\Debug\ClassLibrary1.dll
+C:\Users\104996\Documents\GitHub\exercicio-fada\ClassLibrary1\SuaFada.Com\bin\Debug\ClassLibrary1.pdb
+C:\Users\104996\Documents\GitHub\exercicio-fada\ClassLibrary1\SuaFada.Com\obj\Debug\SuaFada.Com.pdb

@@ -158,7 +158,7 @@
         /m/FA9hwKM6v48iym/0DGRk/Mfnz/DsAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="picturi.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEAAAAAAAD/4QCqRXhpZgAATU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAZKG
         AAcAAAB0AAAALAAAAABDAFIARQBBAFQATwBSADoAIABnAGQALQBqAHAAZQBnACAAdgAxAC4AMAAgACgA
@@ -1064,23 +1064,6 @@
         /m/FA9hwKM6v48iym/0DGRk/Mfnz/DsAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="button2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJ
-        TUUH4gYSFBULWUBOrQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAIRSURBVFhH
-        zZa/SgNBEMYDgoWNjYUg1hYWMXeKloIPYGUUfACttVd7H0Cs7Wx8gBRye+HuCCkEEQQLa5PGQlBU0PnG
-        ieweF3KTPcEPPrib/ea3k82/q2mVBqZH/hrinsTGV2clmk+DaDtrmJ0i0ybvuU1tvxf1wGCCLdsMVxaY
-        +wJwJQZbthkuCj7nGyv0s2wzXAjlmqp0qQE6OKq/MNiyzT9XN+xOZUF7rUqDKfjRai+3F6z3rRKDKfjR
-        SurJXBHEx2AKfrS6YWu6COJjMAU/WpdblxNFEB+DKfhyoqbXHOSFnJE/rdqDeHCPNWSQHdTgV8GWFzX1
-        XUjURD0JzZHUHu8W7yZhXKOGtZ/eqCmZgfuoq0RNDP31crzO9YbZl9oNB0m45hqt8T1lJTPwIwc1SoP4
-        1oF4DRDfclAjOsbUgXgNEKUc1IgaWw7EawDT4qBG9Odx5UA8BgCLgxpR44UN8TyBCw5qlIbmzIH4DEAs
-        DmqUBObUgXgMABYHNaKvzrEN8ToBYnFQoyyMDh2IxwBgcVCjJIj2bIjPAGBxUCP68di1IT4DgMVBjbIl
-        s+lAGvEB6vRqzqX21Fm5noVxjRrWkEFWMmywUFcpaZgNGyJ+y91/iO1aPvMFlmDLKw3j1TxobBNLsOXV
-        qbcXC2FjGCzBllc3vJ6hZvvpZ1x/giVYnejTe0KA/OOVxtQbnQiuQLXaN95c0QBPxXteAAAAAElFTkSu
-        QmCC
-</value>
-  </data>
   <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
@@ -1111,6 +1094,9 @@
     <value>True</value>
   </metadata>
   <metadata name="ColumnCorAsa.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ColumnSexo.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
 </root>

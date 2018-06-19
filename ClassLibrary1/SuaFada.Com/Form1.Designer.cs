@@ -28,57 +28,61 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ColumnNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnFamilia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnCor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnCorAsa = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.label8 = new System.Windows.Forms.Label();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.label7 = new System.Windows.Forms.Label();
-            this.rbNaoAsaQuebrada = new System.Windows.Forms.RadioButton();
+            this.tab = new System.Windows.Forms.TabPage();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.rbFzBarulho = new System.Windows.Forms.RadioButton();
+            this.rbNaoBarulho = new System.Windows.Forms.RadioButton();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.rbSimMulher = new System.Windows.Forms.RadioButton();
+            this.rbNaoMulher = new System.Windows.Forms.RadioButton();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rbSimAsaQuebrada = new System.Windows.Forms.RadioButton();
-            this.label6 = new System.Windows.Forms.Label();
+            this.rbNaoAsaQuebrada = new System.Windows.Forms.RadioButton();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.cbElemento = new System.Windows.Forms.ComboBox();
             this.txtTamanho = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtCorAsa = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtCor = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.picturi = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtFamilia = new System.Windows.Forms.TextBox();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.ColumnNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnFamilia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnCor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnCorAsa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnSexo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tab.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picturi)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tab);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
@@ -120,14 +124,14 @@
             this.button2.BackColor = System.Drawing.Color.Indigo;
             this.button2.Font = new System.Drawing.Font("Mistral", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Fuchsia;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button2.Location = new System.Drawing.Point(768, 86);
+            this.button2.Location = new System.Drawing.Point(768, 83);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(213, 47);
             this.button2.TabIndex = 3;
-            this.button2.Text = "Apagar";
+            this.button2.Text = "Editar";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -155,196 +159,221 @@
             this.ColumnNome,
             this.ColumnFamilia,
             this.ColumnCor,
-            this.ColumnCorAsa});
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Mistral", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.DarkViolet;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.LightGreen;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle4;
+            this.ColumnCorAsa,
+            this.ColumnSexo});
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.DarkViolet;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.LightGreen;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle12;
             this.dataGridView1.Location = new System.Drawing.Point(3, 3);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(759, 458);
             this.dataGridView1.TabIndex = 1;
             // 
-            // ColumnNome
+            // tab
             // 
-            this.ColumnNome.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.DarkViolet;
-            this.ColumnNome.DefaultCellStyle = dataGridViewCellStyle3;
-            this.ColumnNome.HeaderText = "Nome";
-            this.ColumnNome.Name = "ColumnNome";
-            this.ColumnNome.ReadOnly = true;
-            this.ColumnNome.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.tab.BackColor = System.Drawing.Color.Indigo;
+            this.tab.Controls.Add(this.groupBox2);
+            this.tab.Controls.Add(this.groupBox3);
+            this.tab.Controls.Add(this.groupBox1);
+            this.tab.Controls.Add(this.button5);
+            this.tab.Controls.Add(this.button4);
+            this.tab.Controls.Add(this.label9);
+            this.tab.Controls.Add(this.cbElemento);
+            this.tab.Controls.Add(this.txtTamanho);
+            this.tab.Controls.Add(this.label5);
+            this.tab.Controls.Add(this.txtCorAsa);
+            this.tab.Controls.Add(this.label4);
+            this.tab.Controls.Add(this.txtCor);
+            this.tab.Controls.Add(this.label3);
+            this.tab.Controls.Add(this.picturi);
+            this.tab.Controls.Add(this.label2);
+            this.tab.Controls.Add(this.txtFamilia);
+            this.tab.Controls.Add(this.txtNome);
+            this.tab.Controls.Add(this.label1);
+            this.tab.Location = new System.Drawing.Point(4, 22);
+            this.tab.Name = "tab";
+            this.tab.Padding = new System.Windows.Forms.Padding(3);
+            this.tab.Size = new System.Drawing.Size(987, 623);
+            this.tab.TabIndex = 1;
+            this.tab.Text = "Cadastrar Fadinhas";
             // 
-            // ColumnFamilia
+            // groupBox2
             // 
-            this.ColumnFamilia.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ColumnFamilia.HeaderText = "Família";
-            this.ColumnFamilia.Name = "ColumnFamilia";
-            this.ColumnFamilia.ReadOnly = true;
+            this.groupBox2.Controls.Add(this.rbFzBarulho);
+            this.groupBox2.Controls.Add(this.rbNaoBarulho);
+            this.groupBox2.Font = new System.Drawing.Font("Mistral", 20.25F);
+            this.groupBox2.ForeColor = System.Drawing.Color.MediumVioletRed;
+            this.groupBox2.Location = new System.Drawing.Point(255, 186);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(200, 100);
+            this.groupBox2.TabIndex = 26;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Faz Barulho?";
             // 
-            // ColumnCor
+            // rbFzBarulho
             // 
-            this.ColumnCor.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ColumnCor.HeaderText = "Cor";
-            this.ColumnCor.Name = "ColumnCor";
-            this.ColumnCor.ReadOnly = true;
+            this.rbFzBarulho.AutoSize = true;
+            this.rbFzBarulho.Font = new System.Drawing.Font("Mistral", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbFzBarulho.ForeColor = System.Drawing.Color.MediumVioletRed;
+            this.rbFzBarulho.Location = new System.Drawing.Point(6, 39);
+            this.rbFzBarulho.Name = "rbFzBarulho";
+            this.rbFzBarulho.Size = new System.Drawing.Size(67, 37);
+            this.rbFzBarulho.TabIndex = 19;
+            this.rbFzBarulho.Text = "Sim";
+            this.rbFzBarulho.UseVisualStyleBackColor = true;
             // 
-            // ColumnCorAsa
+            // rbNaoBarulho
             // 
-            this.ColumnCorAsa.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ColumnCorAsa.HeaderText = "Cor da Asa";
-            this.ColumnCorAsa.Name = "ColumnCorAsa";
-            this.ColumnCorAsa.ReadOnly = true;
+            this.rbNaoBarulho.AutoSize = true;
+            this.rbNaoBarulho.Font = new System.Drawing.Font("Mistral", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbNaoBarulho.ForeColor = System.Drawing.Color.MediumVioletRed;
+            this.rbNaoBarulho.Location = new System.Drawing.Point(105, 39);
+            this.rbNaoBarulho.Name = "rbNaoBarulho";
+            this.rbNaoBarulho.Size = new System.Drawing.Size(67, 37);
+            this.rbNaoBarulho.TabIndex = 20;
+            this.rbNaoBarulho.Text = "Não";
+            this.rbNaoBarulho.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // groupBox3
             // 
-            this.tabPage2.BackColor = System.Drawing.Color.Indigo;
-            this.tabPage2.Controls.Add(this.button5);
-            this.tabPage2.Controls.Add(this.button4);
-            this.tabPage2.Controls.Add(this.label9);
-            this.tabPage2.Controls.Add(this.comboBox1);
-            this.tabPage2.Controls.Add(this.radioButton5);
-            this.tabPage2.Controls.Add(this.radioButton6);
-            this.tabPage2.Controls.Add(this.label8);
-            this.tabPage2.Controls.Add(this.radioButton3);
-            this.tabPage2.Controls.Add(this.radioButton4);
-            this.tabPage2.Controls.Add(this.label7);
-            this.tabPage2.Controls.Add(this.rbNaoAsaQuebrada);
-            this.tabPage2.Controls.Add(this.rbSimAsaQuebrada);
-            this.tabPage2.Controls.Add(this.label6);
-            this.tabPage2.Controls.Add(this.txtTamanho);
-            this.tabPage2.Controls.Add(this.label5);
-            this.tabPage2.Controls.Add(this.txtCorAsa);
-            this.tabPage2.Controls.Add(this.label4);
-            this.tabPage2.Controls.Add(this.txtCor);
-            this.tabPage2.Controls.Add(this.label3);
-            this.tabPage2.Controls.Add(this.pictureBox1);
-            this.tabPage2.Controls.Add(this.label2);
-            this.tabPage2.Controls.Add(this.txtFamilia);
-            this.tabPage2.Controls.Add(this.txtNome);
-            this.tabPage2.Controls.Add(this.label1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(987, 623);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Cadastrar Fadinhas";
+            this.groupBox3.Controls.Add(this.rbSimMulher);
+            this.groupBox3.Controls.Add(this.rbNaoMulher);
+            this.groupBox3.Font = new System.Drawing.Font("Mistral", 20.25F);
+            this.groupBox3.ForeColor = System.Drawing.Color.MediumVioletRed;
+            this.groupBox3.Location = new System.Drawing.Point(15, 186);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(200, 100);
+            this.groupBox3.TabIndex = 26;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "É Mulher?";
             // 
-            // radioButton5
+            // rbSimMulher
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Font = new System.Drawing.Font("Mistral", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton5.ForeColor = System.Drawing.Color.MediumVioletRed;
-            this.radioButton5.Location = new System.Drawing.Point(346, 237);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(67, 37);
-            this.radioButton5.TabIndex = 20;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "Não";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.rbSimMulher.AutoSize = true;
+            this.rbSimMulher.Font = new System.Drawing.Font("Mistral", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbSimMulher.ForeColor = System.Drawing.Color.MediumVioletRed;
+            this.rbSimMulher.Location = new System.Drawing.Point(20, 39);
+            this.rbSimMulher.Name = "rbSimMulher";
+            this.rbSimMulher.Size = new System.Drawing.Size(67, 37);
+            this.rbSimMulher.TabIndex = 16;
+            this.rbSimMulher.Text = "Sim";
+            this.rbSimMulher.UseVisualStyleBackColor = true;
             // 
-            // radioButton6
+            // rbNaoMulher
             // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Font = new System.Drawing.Font("Mistral", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton6.ForeColor = System.Drawing.Color.MediumVioletRed;
-            this.radioButton6.Location = new System.Drawing.Point(249, 237);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(67, 37);
-            this.radioButton6.TabIndex = 19;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "Sim";
-            this.radioButton6.UseVisualStyleBackColor = true;
+            this.rbNaoMulher.AutoSize = true;
+            this.rbNaoMulher.Font = new System.Drawing.Font("Mistral", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbNaoMulher.ForeColor = System.Drawing.Color.MediumVioletRed;
+            this.rbNaoMulher.Location = new System.Drawing.Point(107, 39);
+            this.rbNaoMulher.Name = "rbNaoMulher";
+            this.rbNaoMulher.Size = new System.Drawing.Size(67, 37);
+            this.rbNaoMulher.TabIndex = 17;
+            this.rbNaoMulher.Text = "Não";
+            this.rbNaoMulher.UseVisualStyleBackColor = true;
             // 
-            // label8
+            // groupBox1
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Mistral", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.MediumVioletRed;
-            this.label8.Location = new System.Drawing.Point(253, 192);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(170, 42);
-            this.label8.TabIndex = 18;
-            this.label8.Text = "Faz Barulho?";
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Font = new System.Drawing.Font("Mistral", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.ForeColor = System.Drawing.Color.MediumVioletRed;
-            this.radioButton3.Location = new System.Drawing.Point(126, 237);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(67, 37);
-            this.radioButton3.TabIndex = 17;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Não";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // radioButton4
-            // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Font = new System.Drawing.Font("Mistral", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton4.ForeColor = System.Drawing.Color.MediumVioletRed;
-            this.radioButton4.Location = new System.Drawing.Point(29, 237);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(67, 37);
-            this.radioButton4.TabIndex = 16;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Sim";
-            this.radioButton4.UseVisualStyleBackColor = true;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Mistral", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.MediumVioletRed;
-            this.label7.Location = new System.Drawing.Point(37, 192);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(134, 42);
-            this.label7.TabIndex = 15;
-            this.label7.Text = "É Mulher?";
-            // 
-            // rbNaoAsaQuebrada
-            // 
-            this.rbNaoAsaQuebrada.AutoSize = true;
-            this.rbNaoAsaQuebrada.Font = new System.Drawing.Font("Mistral", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbNaoAsaQuebrada.ForeColor = System.Drawing.Color.MediumVioletRed;
-            this.rbNaoAsaQuebrada.Location = new System.Drawing.Point(618, 145);
-            this.rbNaoAsaQuebrada.Name = "rbNaoAsaQuebrada";
-            this.rbNaoAsaQuebrada.Size = new System.Drawing.Size(67, 37);
-            this.rbNaoAsaQuebrada.TabIndex = 14;
-            this.rbNaoAsaQuebrada.TabStop = true;
-            this.rbNaoAsaQuebrada.Text = "Não";
-            this.rbNaoAsaQuebrada.UseVisualStyleBackColor = true;
+            this.groupBox1.Controls.Add(this.rbSimAsaQuebrada);
+            this.groupBox1.Controls.Add(this.rbNaoAsaQuebrada);
+            this.groupBox1.Font = new System.Drawing.Font("Mistral", 20.25F);
+            this.groupBox1.ForeColor = System.Drawing.Color.MediumVioletRed;
+            this.groupBox1.Location = new System.Drawing.Point(504, 100);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(200, 100);
+            this.groupBox1.TabIndex = 25;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "A Asa é Quebrada?";
             // 
             // rbSimAsaQuebrada
             // 
             this.rbSimAsaQuebrada.AutoSize = true;
             this.rbSimAsaQuebrada.Font = new System.Drawing.Font("Mistral", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbSimAsaQuebrada.ForeColor = System.Drawing.Color.MediumVioletRed;
-            this.rbSimAsaQuebrada.Location = new System.Drawing.Point(521, 145);
+            this.rbSimAsaQuebrada.Location = new System.Drawing.Point(16, 39);
             this.rbSimAsaQuebrada.Name = "rbSimAsaQuebrada";
             this.rbSimAsaQuebrada.Size = new System.Drawing.Size(67, 37);
             this.rbSimAsaQuebrada.TabIndex = 13;
-            this.rbSimAsaQuebrada.TabStop = true;
             this.rbSimAsaQuebrada.Text = "Sim";
             this.rbSimAsaQuebrada.UseVisualStyleBackColor = true;
             // 
-            // label6
+            // rbNaoAsaQuebrada
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Mistral", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.MediumVioletRed;
-            this.label6.Location = new System.Drawing.Point(500, 100);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(224, 42);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "A Asa é Quebrada?";
+            this.rbNaoAsaQuebrada.AutoSize = true;
+            this.rbNaoAsaQuebrada.Font = new System.Drawing.Font("Mistral", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbNaoAsaQuebrada.ForeColor = System.Drawing.Color.MediumVioletRed;
+            this.rbNaoAsaQuebrada.Location = new System.Drawing.Point(115, 39);
+            this.rbNaoAsaQuebrada.Name = "rbNaoAsaQuebrada";
+            this.rbNaoAsaQuebrada.Size = new System.Drawing.Size(67, 37);
+            this.rbNaoAsaQuebrada.TabIndex = 14;
+            this.rbNaoAsaQuebrada.Text = "Não";
+            this.rbNaoAsaQuebrada.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.Indigo;
+            this.button5.Font = new System.Drawing.Font("Mistral", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.Fuchsia;
+            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
+            this.button5.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button5.Location = new System.Drawing.Point(739, 364);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(213, 47);
+            this.button5.TabIndex = 24;
+            this.button5.Text = "Salavar";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Indigo;
+            this.button4.Font = new System.Drawing.Font("Mistral", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.Fuchsia;
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button4.Location = new System.Drawing.Point(511, 364);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(213, 47);
+            this.button4.TabIndex = 23;
+            this.button4.Text = "Cancelar";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Mistral", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.MediumVioletRed;
+            this.label9.Location = new System.Drawing.Point(8, 305);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(120, 42);
+            this.label9.TabIndex = 22;
+            this.label9.Text = "Elemento";
+            // 
+            // cbElemento
+            // 
+            this.cbElemento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbElemento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbElemento.FormattingEnabled = true;
+            this.cbElemento.Items.AddRange(new object[] {
+            "Fogo",
+            "Água",
+            "Ar",
+            "Gelo",
+            "Terra",
+            "Luz",
+            "Dark",
+            "LUIS FADINHA",
+            "GOD"});
+            this.cbElemento.Location = new System.Drawing.Point(134, 317);
+            this.cbElemento.Name = "cbElemento";
+            this.cbElemento.Size = new System.Drawing.Size(151, 28);
+            this.cbElemento.TabIndex = 21;
             // 
             // txtTamanho
             // 
@@ -403,17 +432,17 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Cor";
             // 
-            // pictureBox1
+            // picturi
             // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(766, 6);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(169, 197);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.picturi.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picturi.Image = ((System.Drawing.Image)(resources.GetObject("picturi.Image")));
+            this.picturi.Location = new System.Drawing.Point(766, 6);
+            this.picturi.Name = "picturi";
+            this.picturi.Size = new System.Drawing.Size(169, 197);
+            this.picturi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picturi.TabIndex = 5;
+            this.picturi.TabStop = false;
+            this.picturi.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label2
             // 
@@ -473,64 +502,42 @@
             this.tabPage4.Text = "Cadastro ultra rápido";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
+            // ColumnNome
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Fogo",
-            "Água",
-            "Ar",
-            "Gelo",
-            "Terra",
-            "Luz",
-            "Dark",
-            "LUIS FADINHA"});
-            this.comboBox1.Location = new System.Drawing.Point(134, 317);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(151, 28);
-            this.comboBox1.TabIndex = 21;
+            this.ColumnNome.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.DarkViolet;
+            this.ColumnNome.DefaultCellStyle = dataGridViewCellStyle11;
+            this.ColumnNome.HeaderText = "Nome";
+            this.ColumnNome.Name = "ColumnNome";
+            this.ColumnNome.ReadOnly = true;
+            this.ColumnNome.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
-            // label9
+            // ColumnFamilia
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Mistral", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.MediumVioletRed;
-            this.label9.Location = new System.Drawing.Point(8, 305);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(120, 42);
-            this.label9.TabIndex = 22;
-            this.label9.Text = "Elemento";
+            this.ColumnFamilia.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ColumnFamilia.HeaderText = "Família";
+            this.ColumnFamilia.Name = "ColumnFamilia";
+            this.ColumnFamilia.ReadOnly = true;
             // 
-            // button4
+            // ColumnCor
             // 
-            this.button4.BackColor = System.Drawing.Color.Indigo;
-            this.button4.Font = new System.Drawing.Font("Mistral", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.Fuchsia;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button4.Location = new System.Drawing.Point(511, 364);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(213, 47);
-            this.button4.TabIndex = 23;
-            this.button4.Text = "Adicionar";
-            this.button4.UseVisualStyleBackColor = false;
+            this.ColumnCor.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ColumnCor.HeaderText = "Cor";
+            this.ColumnCor.Name = "ColumnCor";
+            this.ColumnCor.ReadOnly = true;
             // 
-            // button5
+            // ColumnCorAsa
             // 
-            this.button5.BackColor = System.Drawing.Color.Indigo;
-            this.button5.Font = new System.Drawing.Font("Mistral", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.Fuchsia;
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button5.Location = new System.Drawing.Point(739, 364);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(213, 47);
-            this.button5.TabIndex = 24;
-            this.button5.Text = "Salavar";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.ColumnCorAsa.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ColumnCorAsa.HeaderText = "Cor da Asa";
+            this.ColumnCorAsa.Name = "ColumnCorAsa";
+            this.ColumnCorAsa.ReadOnly = true;
+            // 
+            // ColumnSexo
+            // 
+            this.ColumnSexo.HeaderText = "Sexo";
+            this.ColumnSexo.Name = "ColumnSexo";
+            this.ColumnSexo.ReadOnly = true;
             // 
             // Form1
             // 
@@ -544,9 +551,15 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tab.ResumeLayout(false);
+            this.tab.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picturi)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -555,41 +568,42 @@
 
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tab;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNome;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnFamilia;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnCor;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnCorAsa;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtFamilia;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picturi;
         private System.Windows.Forms.TextBox txtTamanho;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtCorAsa;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtCor;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.RadioButton rbNaoAsaQuebrada;
         private System.Windows.Forms.RadioButton rbSimAsaQuebrada;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton6;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.RadioButton rbNaoMulher;
+        private System.Windows.Forms.RadioButton rbSimMulher;
+        private System.Windows.Forms.RadioButton rbNaoBarulho;
+        private System.Windows.Forms.RadioButton rbFzBarulho;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbElemento;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNome;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnFamilia;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnCor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnCorAsa;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnSexo;
     }
 }
 

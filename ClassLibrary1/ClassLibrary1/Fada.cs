@@ -20,13 +20,14 @@ namespace Model
 
         private string nome;
         private string familia;
-        private string Cor;
-        private string CorAsa;
+        private string cor;
+        private string corAsa;
         private double tamanho;
         public bool AsaQuebrada { get; set; }
         public bool Sexo { get; set; }
         public bool Barulho { get; set; }
         public string Elemento { get; set; }
+        
         
 
         public string Nome
@@ -75,6 +76,35 @@ namespace Model
                 tamanho = value;
             }
         }
-
+        public string Cor
+        {
+            get
+            {
+                return cor;
+            }
+            set
+            {
+                if(value.Count() < 4 || string.IsNullOrEmpty(value))
+                {
+                    throw new Exception("Cor é inválida");
+                }
+                cor = value;
+            }
+        }
+        public string CorAsa
+        {
+            get
+            {
+                return corAsa;
+            }
+            set
+            {
+                if (value.Count() < 4 || string.IsNullOrEmpty(value))
+                {
+                    throw new Exception("Cor da Asa é inválida");
+                }
+                corAsa = value;
+            }
+        }
     }
 }
